@@ -1,0 +1,42 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/Clip.ttf);
+}
+
+@font-face {
+  font-family: display;
+  src: url(fonts/TextMeOne-Regular.ttf);
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #020102,
+      0 0 40px #4e474b, 0 0 50px #292627, 0 0 60px #444343, 0 0 70px #585758;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+body {
+  background-color: #ffd1b3;
+}
+
+#name {
+  padding-top: 15px;
+  align-content: center;
+  font-size: 35px;
+  /* float: left; */
+  color: black;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#buttons {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
